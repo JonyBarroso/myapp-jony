@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='container-fluid fondo_amarillo'>
       <NavBar />
-      <h2>Tu mejor opcion en mates artesanales</h2>
+      <h1>Tu mejor opcion en mates artesanales</h1>
     </div>
   );
 }
