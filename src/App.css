@@ -78,3 +78,9 @@ h1{
   display: flex;
   justify-content: space-around;
 }
+
+.parrafo{
+  color: white;
+  background-color: gray;
+  padding: 5px;
+}
