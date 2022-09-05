@@ -2,9 +2,9 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/footer';
 import Header from './components/header';
-import Item from './components/Item';
-import Titulo from './components/Titulo';
-import Input from './components/Input';
+import Item from './components/ItemListContainer/Item';
+import Titulo from './components/ItemListContainer/Titulo';
+import Input from './components/ItemListContainer/Input';
 import Prefooter from './components/Prefooter';
 
 const lista = ["Mates", "Cazuelas"];
