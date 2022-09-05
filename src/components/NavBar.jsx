@@ -19,17 +19,20 @@ const NavBar = () => {
         <li class="nav-item">
           <a class="nav-link" href="#">Contacto</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Carrito</a>
-        </li>
+        <form class="container-fluid justify-content-start">
+    <button class="btn btn-outline-success me-2" type="button"> <img src={Carrito} className="carrito" /> carrito</button>
+  </form>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Modelos
           </a>
+          
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Mate Geometrico</a></li>
             <li><a class="dropdown-item" href="#">Mates Peritas</a></li>
             <li><a class="dropdown-item" href="#">Cazuelas</a></li>
+            
+            
           </ul>
         </li>
       </ul>
