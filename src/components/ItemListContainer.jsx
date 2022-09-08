@@ -6,13 +6,14 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         const productos = [
-            {"id":1, "nombre":"Hamburguesa", "descripcion":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", "calorias":243, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXzqebG/200/200/original?country=ar", "precio":500},
-            {"id":2, "nombre":"Hamburguesa con Queso", "descripcion":"Carne 100% vacuna, queso derretido y mostaza, kétchup y cebolla triturada, es algo que nunca puede fallar. Un clásico que nunca pasa de moda.", "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqX8TYcp/200/200/original?country=ar", "calorias":289, "precio":600},
-            {"id":3, "nombre":"McFiesta", "descripcion":"Hamburguesa elaborada con carne 100% de carne vacuna, mayonesa, lechuga, tomate.", "calorias":295, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXakvb9/200/200/original?country=ar", "precio":700},
-            {"id":4, "nombre":"McDuo", "descripcion":"Una hamburguesa exquisita compuesta de dos carnes 100% vacuna, acompañadas del clásico pan, mostaza, kétchup, queso derretido, y un toque de cebolla que la hace única.", "calorias":303, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXhzvVg/200/200/original?country=ar", "precio":800},
-            {"id":5, "nombre":"Triple Hamburguesa con Queso", "descripcion":"Tres medallones de carne 100% vacuna, queso derretido, mostaza, kétchup y cebolla triturada, es algo que nunca puede fallar.", "calorias":310, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXsCqnz/200/200/original?country=ar", "precio":900},
-            {"id":6, "nombre":"Big Mac", "descripcion":"Quizás sean las dos hamburguesas de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.", "calorias":505, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqX3vl0y/200/200/original?country=ar", "precio":1000}
+            {"id":1, "nombre":"Mate Geometrico", "descripcion":"Mate amplio para el que usa demasiada yerba", "img" :'src={Mate Geometrico} className="mate geometrico', "precio":1350},
+            {"id":2, "nombre":"Mate Perita", "descripcion":"Mate simple, chico", "precio":1200},
+            {"id":3, "nombre":"Mate Perita Fino", "descripcion":"Mate identico al perita comun pero un poco mas largo","precio":1250},
+            {"id":4, "nombre":"Cazuelas", "descripcion":"Cazuelas para usarlas para lo que mas te guste", "precio":1500},
+            {"id":5, "nombre":"Bombillas", "descripcion":"Bombillas de muy buena calidad", "precio":500},
+            {"id":6, "nombre":"Mochilas Materas", "descripcion":"Bandejas para llevar tu set de mate a donde quieras", "precio":1800}
         ];
+    
 
         const getProductos = new Promise((resolve) => {
             setTimeout(() => {
