@@ -1,16 +1,12 @@
-import React, { Component } from "react";
-import Prefooter from "./Prefooter";
+import React from "react"
 
-class Footer extends Component {
-    render() {
+const Footer  = () => {
         return (
             <div className="row">
                 <div className="col-md-12 bg-black text-white p-3">
-                <Prefooter ubicacion={this.props.ubicacion} anio={this.props.anio} />  
                 </div>                
             </div>
         )
     }
-}
 
 export default Footer;

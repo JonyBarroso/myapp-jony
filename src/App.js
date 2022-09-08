@@ -1,20 +1,20 @@
 import './App.css';
 import Navbar from './components/NavBar';
 import Header from './components/Header';
-import Footer from './components/footer';
 import ItemCount from './components/ItemCount';
+import ItemListContainer from './components/ItemListContainer';
 
 
 
  function App() {
   return (
-    <div>
+    <div className='container'>
       <Navbar />
       <Header />
-      
+      <ItemListContainer />
       <ItemCount  stock={5} initial={1} onAdd={0} />
       <hr />
-      <Footer />
+
     </div>      
   );
 }

@@ -1,0 +1,9 @@
+[
+    
+    {"id":1, "nombre":"Mate Geometrico", "descripcion":"Mate amplio para el que usa demasiada yerba", "precio":500},
+    {"id":2, "nombre":"Mate Perita", "descripcion":"Mate simple, chico", "precio":600},
+    {"id":3, "nombre":"Mate Perita Fino", "descripcion":"Mate identico al perita comun pero un poco mas largo","precio":800},
+    {"id":1, "nombre":"Cazuelas", "descripcion":"Cazuelas para usarlas para lo que mas te guste", "precio":500},
+    {"id":5, "nombre":"Bombillas", "descripcion":"Bombillas de muy buena calidad", "precio":900},
+    {"id":6, "nombre":"Mochilas Materas", "descripcion":"Bandejas para llevar tu set de mate a donde quieras", "precio":1000}
+]
