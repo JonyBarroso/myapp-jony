@@ -1,6 +1,7 @@
 import React from "react";
-import Carrito from "../../src/assets/carrito.png"
 import athena from "../components/imagenes/athena.jpg"
+import CardWidget from "./CartWidget";
+
 
 const NavBar = () => {
     return (
@@ -21,7 +22,9 @@ const NavBar = () => {
           <a className="nav-link" href="#">Contacto</a>
         </li>
         <form className="container-fluid justify-content-start">
-    <button className="btn btn-outline-success me-2" type="button"> <img src={Carrito} className="carrito" /> carrito</button>
+    <button>
+      <CardWidget />
+    </button>
   </form>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,9 +34,7 @@ const NavBar = () => {
           <ul className="dropdown-menu">
             <li><a className="dropdown-item" href="#">Mate Geometrico</a></li>
             <li><a className="dropdown-item" href="#">Mates Peritas</a></li>
-            <li><a className="dropdown-item" href="#">Cazuelas</a></li>
-            
-            
+            <li><a className="dropdown-item" href="#">Cazuelas</a></li> 
           </ul>
         </li>
       </ul>

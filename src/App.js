@@ -1,8 +1,8 @@
 import './App.css';
 import Navbar from './components/NavBar';
-import Header from './components/Header';
 import ItemCount from './components/ItemCount';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 
 
@@ -10,10 +10,12 @@ import ItemListContainer from './components/ItemListContainer';
   return (
     <div className='container'>
       <Navbar />
-      <Header />
       <ItemListContainer />
+      <ItemDetailContainer />
+      
       <ItemCount  stock={5} initial={1} onAdd={0} />
       <hr />
+      
 
     </div>      
   );
