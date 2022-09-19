@@ -1,22 +1,24 @@
-import React, { useEffect, useState } from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Detalle from "./components/Detalle";
-import NavbarA from "./components/NavBarA";
-import Productos from "./components/Productos";
+import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from './components/NavBar';
+import Checkout from './components/Checkout';
+import ItemListContainer from './components/ItemListContainer';
+import ItemDetailsContainer from './components/ItemDetailContainer';
+import Inicio from './components/Inicio';
 
-const App = () => {
+function App() {
   return (
-    <div className="container">
       <BrowserRouter>
-        <NavbarA />
         <Routes>
-          <Route exact path="/" element={<Productos />} />
-          <Route exact path="/categoria/:genero" element={<Productos />} />
-          <Route exact path="/producto/:id" element={<Detalle />} />
+          <Route path={"/inicio"} element={<Inicio />} />
+          <Route path={"/barra"} element={<NavBar />} />
+          <Route path={"/category/:id"} element={<ItemListContainer />} />
+          <Route path={"/menu"} element={<ItemListContainer />} />
+          <Route path={"/item/:id"} element={<ItemDetailsContainer />} />
+          <Route path={"/item/:id"} element={<Checkout />} />
         </Routes>
       </BrowserRouter>
-    </div>
-  )
+  );
 }
 
 export default App;

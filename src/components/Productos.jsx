@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Producto from "./Producto";
+import Products from "./Products";
 
 const Productos = () => {
     const [items, setItems] = useState([]);
@@ -23,7 +24,7 @@ const Productos = () => {
             categoria = "all";
         }
 
-        fetch('https://fakestoreapi.com/products')
+        fetch(<Products />)
             .then(res=>res.json())
             .then(json=> {
                 if (categoria === "all") {

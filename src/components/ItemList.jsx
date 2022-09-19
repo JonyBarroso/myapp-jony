@@ -1,16 +1,16 @@
 import React from "react";
 import Item from "./Item";
 
-
 const ItemList = ({items}) => {
-
-    return(
+    return (
         <div className="row">
-            {items.map(item => <Item id={item.id} nombre={item.nombre} descripcion={item.descripcion} img={item.img} precio={item.precio} />)}
+            {items.map(item => (
+                <div key={item.id} className="col-md-4 py-3">
+                    <Item item={item} />
+                </div>)
+            )}
         </div>
-    );
-
- }
-
+    )
+}
 
 export default ItemList;

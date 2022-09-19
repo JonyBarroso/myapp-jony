@@ -2,13 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Products from "../components/Products";
 
 const Detalle = () => {
     const [item, setItem] = useState([]);
     const {id} = useParams();
 
     useEffect(() => {
-        fetch( + id)
+        fetch( <Products /> + id)
             .then(res=>res.json())
             .then(json=> {
                 setItem(json);
@@ -19,12 +20,12 @@ const Detalle = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-4 offset-md-2">
-                    <img src={item.image} alt={item.title} className="img-fluid" />
+                    <img src={item.img} alt={item.nombre} className="img-fluid" />
                 </div>
                 <div className="col-md-4">
-                    <h1>{item.title}</h1>
-                    <p>{item.description}</p>
-                    <p><b>${item.price}</b></p>
+                    <h1>{item.nombre}</h1>
+                    <p>{item.descripcion}</p>
+                    <p><b>${item.precio}</b></p>
                 </div>
             </div>
         </div>

@@ -2,8 +2,8 @@ import mate_geometrico from "../components/imagenes/mate_geometrico.jpg";
 import mate_geometrico2 from "../components/imagenes/mate_geometrico2.jpg";
 import mate_perita from "../components/imagenes/mate_perita.jpg";
 import mate_perita_fino from "../components/imagenes/mate_perita_fino.jpg";
-import cazuela from "../components/imagenes/cazuela.jpg";
- export const Products = [
+import cazuela from "../components/imagenes/cazuela.jpg"; 
+const Products = [
             
     {"id":1, "nombre":"Mate Geometrico", "descripcion":"Mate amplio para el que usa demasiada yerba", "img" : mate_geometrico, "precio":1350},
     {"id":2, "nombre":"Mochilas Perita", "descripcion":"Bandejas para llevar tu set de mate a donde quieras", "img" : mate_perita, "precio":1800},
@@ -12,3 +12,5 @@ import cazuela from "../components/imagenes/cazuela.jpg";
     {"id":5, "nombre":"Bombillas", "descripcion":"Bombillas de muy buena calidad", "img" : mate_geometrico2, "precio":500},
     {"id":6, "nombre":"Mochilas Materas", "descripcion":"Bandejas para llevar tu set de mate a donde quieras","img" : mate_geometrico2, "precio":1800},
 ];
+
+export default Products;
