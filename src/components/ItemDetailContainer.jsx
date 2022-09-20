@@ -1,39 +1,28 @@
-import React, {  useEffect, useState } from 'react';
-import ItemDetail from './ItemDetail';
-import  Products  from "./Products";
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import {CartContext} from "../components/Context";
+import ItemCount from "../components/ItemCount";
 
+const ItemDetails = ({item}) => {
+    const {addItem} = useContext(CartContext);
+    const [counter, setCounter] = useState(0);
 
-const ItemDetailContainer = () => {
-    const [item, setItems] = useState ({})
+    const onAdd = (counter) => {
+        setCounter(counter); 
+        addItem(item, counter);
+    }
 
-    useEffect (() => {
-        const getProductos = () =>
-        new Promise ((res, rej) => {
-            const product = Products.find((prod) => prod.id === 1)
-            setTimeout (() => {
-                res(product)
-            }, 500);
-            
-        });
-
-        getProductos()
-        .then((info) => {
-            setItems(info)
-        })
-
-        .catch((error) => {
-            console.log(error);
-        });
-
-        
-    }, []);
-return (
-    <div style={{ minHeight: '78vh' }}>
-        <ItemDetail item={item} />
-
-    </div>
-)
+    return (
+        <div className="row mb-5">
+            <div className="col-md-4 offset-md-4 text-center color_marron">
+                <img src={"../images/" + item.imagen} className="img-fluid" alt={item.nombre} />
+                <h1>{item.nombre}</h1>
+                <p><b>${item.precio}</b></p>
+                <p>{item.descripcion}</p>
+                {counter === 0 ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> : <Link to={"/cart"} className="btn fondo_naranja">Ir al Carrito</Link>}
+            </div>
+        </div>
+    )
 }
 
-
-export default ItemDetailContainer;
+export default ItemDetails;

@@ -1,26 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import logo from "../components/imagenes/athena.jpg";
 
-const Navbar = () => {
+const NavBar = () => {
     return (
-        <ul className="nav py-3">
+        <ul className="nav d-flex align-items-center">
             <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to={"/"}>Inicio</Link>
+                <NavLink className="nav-link active" aria-current="page" to={"/"}><img src={logo} width="48" alt="Athena" /></NavLink>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to={"/categoria/mates"}>Mates</Link>
+                <NavLink className="nav-link link_header" to={"/category/:id"}>Mates</NavLink>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to={"/categoria/mochilas"}>Mochilas Materas</Link>
-            </li>
-            <li className="nav-item">
-                <Link className="nav-link" to={"/categoria/termos"}>Termos</Link>
-            </li>
-            <li className="nav-item">
-                <Link className="nav-link" to={"/categoria/cazuelas"}> Cazuelas</Link>
+                <NavLink className="nav-link link_header" to={"/menu"}>Menú</NavLink>
             </li>
         </ul>
     )
 }
 
-export default Navbar;
+export default NavBar;
