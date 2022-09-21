@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ItemListContainer from "./ItemListContainer";
+import Destacado from "../components/Destacado";
+import NavBar from "../components/NavBar";
 
 const Inicio = () => {
     return (
         <div className="container-fluid fondo_amarillo">
-            <Header />
-            <ItemListContainer />
+            <NavBar />
+            <Destacado />
             <Footer />
         </div>
     )

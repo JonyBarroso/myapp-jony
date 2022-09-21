@@ -4,8 +4,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Products from "../components/Products";
 import ItemList from "../components/ItemList";
-import logo from "../components/imagenes/athena.jpg";
-import { NavLink } from "react-router-dom";
 
 const ItemListContainer = () => {
     const {id} = useParams();

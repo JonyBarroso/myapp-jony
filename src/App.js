@@ -13,7 +13,7 @@ function App() {
     <Provider>
       <BrowserRouter>
         <Routes>
-          <Route path={"/home"} element={<Inicio />} />
+          <Route path={"/"} element={<Inicio />} />
           <Route path={"/"} element={<Navbar />} />
           <Route path={"/category/:id"} element={<ItemListContainer />} />
           <Route path={"/menu"} element={<ItemListContainer />} />
