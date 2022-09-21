@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import {CartContext} from "../Context/Context";
-import carrito from "../images/basket.svg";
-import cesto from "../images/trash3.svg";
+import {CartContext} from "../components/Context";
+import carrito from "../components/imagenes/basket.svg";
+import cesto from "../components/imagenes/trash3.svg";
 
 const CartWidget = () => {
+    const {cartTotal, clear} = useContext(CartContext); 
+
     return (
         <div>
             <button type="button" className="btn fondo_naranja position-relative me-1" title="Vaciar Carrito" onClick={()=> {clear()}}>
