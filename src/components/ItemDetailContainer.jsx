@@ -1,31 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Products from "../components/Products";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 import ItemDetail from "../components/ItemDetail";
+import Loading from "../components/Loading";
 
 const ItemDetailContainer = () => {
     const {id} = useParams();
     const [item, setItem] = useState({});
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const getProductos = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(Products.find(producto => producto.id === parseInt(id)) || []);
-            }, 2000);
-        });
-
-        getProductos.then((respuesta) => {
-            setItem(respuesta);
+        const db = getFirestore();
+        const response = doc(db, "items", id);
+        getDoc(response).then((snapShot) => {
+            if (snapShot.exists()) {
+                setItem({id:snapShot.id, ...snapShot.data()});
+                setLoading(false);
+            }            
         });
     }, [id]);
 
     return (
-        <div className="container-fluid fondo_amarillo">
-            <Header />
-            <ItemDetail item={item} />
-            <Footer />
+        <div className="container">
+            {loading ? <Loading /> : <ItemDetail item={item} />}
         </div>
     )
 }

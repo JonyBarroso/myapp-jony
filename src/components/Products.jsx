@@ -14,7 +14,7 @@ const Products = [
 
     {id:1, nombre:"Mate Geometrico", descripcion:"mate de gran tamaño", imagen:mate_geometrico, precio:1200, categoria:"mates", stock:5},
 
-    {id:2, nombre:"Mate Geometrico", descripcion:"mate de gran tamaño", imagen:mate_geometrico2, precio:1200, categoria:"mates", stock:6},
+    {id:2, nombre:"Mate Geometrico ", descripcion:"mate de gran tamaño", imagen:mate_geometrico2, precio:1200, categoria:"mates", stock:6},
 
     {id:3, nombre:"Mate Geometrico", descripcion:"mate de gran tamaño", imagen:mate_geometrico3, precio:1200, categoria:"mates", stock:4},
 
