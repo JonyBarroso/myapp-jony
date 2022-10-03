@@ -9,7 +9,7 @@ const NavBar = () => {
                 <NavLink className="nav-link active" aria-current="page" to={"/"}><img src={logo} width="48" alt="Athena" /></NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/category/:id"}>Mates</NavLink>
+                <NavLink className="nav-link link_header" to={"/category/mates"}>Mates</NavLink>
             </li>
             <li className="nav-item">
                 <NavLink className="nav-link link_header" to={"/menu"}>Menú</NavLink>

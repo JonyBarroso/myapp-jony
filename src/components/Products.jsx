@@ -1,14 +1,14 @@
-import mate_geometrico from '../components/imagenes/mate_geometrico.jpg'
+import mate_geometrico from "./imagenes-mates/mate_geometrico1.jpg"
 
-import mate_geometrico2 from '../components/imagenes/mate_geometrico2.jpg'
+import mate_geometrico2 from "./imagenes-mates/mate_geometrico2.jpg"
 
-import mate_geometrico3 from '../components/imagenes/mate_geometrico3.jpg'
+import mate_geometrico3 from "./imagenes-mates/mate_geometrico3.jpg"
 
-import mate_perita_fino from '../components/imagenes/mate_perita_fino.jpg'
+import mate_perita_fino from "./imagenes-mates/mate_perita_fino.jpg"
 
-import mate_perita from '../components/imagenes/mate_perita.jpg'
+import mate_perita from "./imagenes-mates/mate_perita.jpg"
 
-import cazuela from '../components/imagenes/cazuela.jpg'
+import cazuela from "./imagenes-mates/cazuela.jpg"
 
 const Products = [
 

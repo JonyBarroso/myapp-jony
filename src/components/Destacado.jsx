@@ -1,6 +1,6 @@
 import React from "react";
-import destacado from "../components/imagenes/destacado.jpg"
-import destacado2 from "../components/imagenes/destacado2.jpg"
+import destacado from "../components/imagenes/destacado.jpg";
+import destacado2 from "../components/imagenes/destacado2.jpg";
 import mate_geometrico from "../components/imagenes/mate_geometrico.jpg";
 import mate_geometrico2 from "../components/imagenes/mate_geometrico2.jpg";
 
