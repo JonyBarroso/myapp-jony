@@ -14,6 +14,9 @@ const NavBar = () => {
             <li className="nav-item">
                 <NavLink className="nav-link link_header" to={"/menu"}>Menú</NavLink>
             </li>
+            <li className="nav-item">
+                <NavLink className="nav-link link_header" to={"/nosotros"}>Nosotros</NavLink>
+            </li>
         </ul>
     )
 }
