@@ -12,11 +12,17 @@ const NavBar = () => {
                 <NavLink className="nav-link link_header" to={"/category/mates"}>Mates</NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/menu"}>Menú</NavLink>
-            </li>
-            <li className="nav-item">
                 <NavLink className="nav-link link_header" to={"/nosotros"}>Nosotros</NavLink>
             </li>
+            <li className="nav-item">
+                <NavLink className="nav-link link_header" to={"/contacto"}>Contacto</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="nav-link link_header" to={"/cart"}>Carrito</NavLink>
+            </li>
+           
+            
+            
         </ul>
     )
 }

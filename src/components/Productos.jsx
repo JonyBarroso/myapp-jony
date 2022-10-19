@@ -12,14 +12,12 @@ const Productos = () => {
     useEffect(() => {
         let categoria = "";
 
-        if (modelos === "mates") {
-            categoria = "mates de madera";
-        } else if (modelos === "mochilas") {
-            categoria = "mochilas materas";
-        } else if (modelos === "termos") {
-            categoria = "termos";
-        } else if (modelos === "cazuelas") {
-            categoria ="cazuelas";
+        if (modelos === "cazuela") {
+            categoria = "cazuelas";
+        } else if (modelos === "mates") {
+            categoria = "mategeometrico";
+        } else if (modelos === "mates") {
+            categoria = "mateperita";
         } else {
             categoria = "all";
         }

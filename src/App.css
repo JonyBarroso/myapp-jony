@@ -6,9 +6,10 @@
 
 body{
   background-size: cover;
-  background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #bdc3c7; 
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
+background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+font-family: 'Montserrat', sans-serif;
 
 }
 nav{
@@ -60,7 +61,7 @@ nav{
 
 .menu-vertical li a{
   display: block;
-  color: dimgrey;
+  color: rgb(126, 81, 81);
   padding: 20px 20px 15px 15px;
   text-decoration: none;
 }
@@ -96,4 +97,14 @@ h1{
 .carrito{
   display:flex;
   align-items: center;
+}
+.color{
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 20px;
+}
+.titulo{
+  color: #333;
+  font-size: 40px;
+
 }
