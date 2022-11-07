@@ -2,8 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import Producto from "./Producto";
-import Products from "./Products";
+import Producto from "../components/Producto";
+import Products from "../components/Products";
 
 const Productos = () => {
     const [items, setItems] = useState([]);
