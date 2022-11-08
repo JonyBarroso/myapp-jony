@@ -14,8 +14,8 @@ const Inicio = () => {
                 Lo que es seguro es que en la mayoría de las casas hay un mate.
                 </p>
                 <p className="color">Tomar mate, es siempre una buena idea!
-Ritual eterno. Esencial en una reunión familiar o juntada con amigos, siempre está presente.
-El agua, la yerba, la bombilla y hasta la forma de cebarlo puede afectar el resultado final.</p>
+                    Ritual eterno. Esencial en una reunión familiar o juntada con amigos, siempre está presente.
+                    El agua, la yerba, la bombilla y hasta la forma de cebarlo puede afectar el resultado final.</p>
             <Destacado />
         </div>
     )

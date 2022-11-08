@@ -17,11 +17,7 @@ const NavBar = () => {
             <li className="nav-item">
                 <NavLink className="nav-link link_header" to={"/contacto"}>Contacto</NavLink>
             </li>
-            <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/cart"}>Carrito</NavLink>
-            </li>
            
-            
             
         </ul>
     )
