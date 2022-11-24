@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../components/Context";
 import cesto from "../components/imagenes/cesto.png";
 import carrito from "../components/imagenes/carrito.png";
-import athena from "../components/imagenes/athena.jpg"
 
 const Cart = () => {
     const {cart, removeItem, clear, cartTotal, cartSuma} = useContext(CartContext);
@@ -22,7 +21,7 @@ const Cart = () => {
                         </tr>
                         {cart.map(item => (
                             <tr key={item.id}>
-                                <td className="text-start"><img src={item.imagen} alt={item.nombre} title={item.nombre} width="120" /></td>
+                                <td className="text-start"><img src={"images/" + item.imagen} alt={item.nombre} title={item.nombre} width="120" /></td>
                                 <td className="text-start align-middle">{item.nombre}</td>
                                 <td className="text-end align-middle">{item.cantidad} x ${item.precio}</td>
                                 <td className="text-end align-middle">${item.cantidad * item.precio}</td>
@@ -37,9 +36,6 @@ const Cart = () => {
                             <td className="text-end">
                                 <Link to={"/checkout"} title="Finalizar Compra">
                                     <button className="btn fondo_naranja">Finalizar Compra <img src={carrito} alt="Finalizar Compra" width="16" /></button>
-                                </Link>
-                                <Link to={"/menu"} title="Finalizar Compra">
-                                    <button className="btn fondo_naranja">Seguir Comprando <img src={athena} alt="seguir comprando" width="16" /></button>
                                 </Link>
                             </td>
                         </tr>
